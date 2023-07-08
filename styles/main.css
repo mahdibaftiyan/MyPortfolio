@@ -1,0 +1,110 @@
+@import url(portfolios.css);
+@import url(background.css);
+@import url(shared.css);
+@import url(media-screen.css);
+/* main codes */
+#main {
+  width: 90%;
+  margin: 5rem auto;
+  padding: 0 0;
+  grid-column: 1 / 1;
+  grid-row: 2 / 3;
+}
+
+/* section introduse */
+.main-introduse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+  max-height: 650px;
+}
+
+/* images */
+.main-introduse__image {
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.main-introduse__image img {
+  width: 100%;
+  height: 100%;
+}
+
+/*  text about */
+.main-introduse__shortAbout {
+  width: 60%;
+  height: 100%;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  direction: rtl;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+/* texts */
+.shortAbout__text {
+  padding: 2rem 0;
+  grid-column: 2 / span 4;
+  grid-row: 1 / 4;
+}
+
+.shortAbout__title {
+  background: -webkit-linear-gradient(#b92b27, #1565c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: samim;
+  font-size: 2rem;
+}
+.shortAbout__animate {
+  display: none;
+}
+.shortAbout__par {
+  text-align: right;
+  font-family: vazir;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+/* links */
+.shortAbout__links {
+  width: 100%;
+  grid-column: 2 / span 4;
+  grid-row: 5 / -1;
+  margin-top: 2rem;
+}
+.shortAbout__links__contact {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-family: vazir;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0 0.6rem;
+}
+.links_phone {
+  text-decoration: none;
+  margin: 0 0.6rem;
+  font-size: 1.5rem;
+}
+
+/* portfolio */
+.portfolio {
+  grid-row: 3/4;
+}
+
+#footer {
+  grid-row: 4/5;
+}

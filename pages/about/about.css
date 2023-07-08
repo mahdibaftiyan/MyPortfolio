@@ -1,0 +1,63 @@
+@import url(../../styles/shared.css);
+@import url(../../styles/background.css);
+
+#main {
+  width: 80%;
+  margin: 10rem auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.introduction {
+  width: 25%;
+  height: auto;
+  text-align: right;
+  font-size: 1.5rem;
+  font-family: vazir;
+  line-height: 5rem;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.8px);
+  -webkit-backdrop-filter: blur(0.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.about-par {
+  width: 60%;
+  font-size: 1rem;
+  font-family: samim;
+  line-height: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .introduction {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #main {
+    width: 90%;
+    margin: 5rem auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .introduction {
+    width: 95%;
+    margin: 1rem 0;
+  }
+  .about-par {
+    width: 95%;
+  }
+}
